@@ -5,7 +5,8 @@
     "prettier/react"
   ],
   "rules": {
-    "react/jsx-filename-extension": [1, { "extensions": [".js"] }]
+    "react/jsx-filename-extension": [1, { "extensions": [".js"] }],
+    "import/no-unresolved": 0
   },
   "env": {
     "browser": true,
