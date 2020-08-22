@@ -1,9 +1,7 @@
 // eslint-disable-next-line import/prefer-default-export
 export const theme = {
-  color: {
-   "text": 'hsl(0, 10, 10)',
-    "red": 'hsl(356, 74, 49)',
-  },
+  "black": '#1A1A1A',
+  "red": '#D8202D',
   font: {
     weight: {
       "thin": 200,
