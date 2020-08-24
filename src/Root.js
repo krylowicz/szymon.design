@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import HomeView from 'pages/Home';
+import IndexPage from 'pages/IndexPage';
 
 const Root = () => (
   <BrowserRouter>
-    <Route exact path="/" component={HomeView} />
+    <Route exact path="/" component={IndexPage} />
   </BrowserRouter>
 );
 
