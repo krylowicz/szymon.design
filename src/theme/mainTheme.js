@@ -12,6 +12,7 @@ export const theme = {
     },
     family: {
       rocWide: "roc-grotesk-wide, sans-serif",
+      rocMedium: "roc-grotesk-medium, sans-serif",
     }
   }
 };

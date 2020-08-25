@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import Menu from 'components/Menu/Menu';
+import MobileMenu from 'components/MobileMenu/MobileMenu';
 
 const StyledWrapper = styled.div`
   z-index: 10;
@@ -13,10 +14,17 @@ const StyledWrapper = styled.div`
   height: 10vh;
 `;
 
-const Header = () => (
-  <StyledWrapper>
-    <Menu />
-  </StyledWrapper>
-);
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleOnClick = () => setIsMenuOpen(!isMenuOpen);
+
+  return (
+    <StyledWrapper>
+      <Menu handleOnClick={handleOnClick} isMenuOpen={isMenuOpen} />
+      <MobileMenu isMenuOpen={isMenuOpen} />
+    </StyledWrapper>
+  )
+};
 
 export default Header;

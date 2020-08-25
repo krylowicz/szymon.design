@@ -28,8 +28,13 @@ const StyledHeading = styled.h1`
   font-size: 3rem;
   font-family: ${({ theme }) => theme.font.family.rocWide};
   color: ${({ theme }) => theme.black};
+  transform: translateY(10vh);
 `;
 
+const StyledButton = styled(Button)`
+  transform: translateY(20vh);
+  padding: 2.2rem 2.7rem;
+`;
 
 const HeroTemplate = () => (
   <StyledWrapper>
@@ -40,7 +45,7 @@ const HeroTemplate = () => (
       UX/UI Designer <br />
       Based in London
     </StyledHeading>
-    <Button text="Let me show you!"/>
+    <StyledButton text="Let me show you!"/>
   </StyledWrapper>
 );
 

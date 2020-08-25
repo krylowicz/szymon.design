@@ -10,17 +10,20 @@ const StyledButton = styled.button`
   border: none;
   border-radius: 5rem;
   background-color: ${({ theme }) => theme.red};
-  padding: 2.2rem 2.7rem;
   width: 22rem;
-  transform: translateY(8rem);
 `;
 
-const Button = ({text}) => (
-  <StyledButton>{text}</StyledButton>
+const Button = ({text, className}) => (
+  <StyledButton className={className}>{text}</StyledButton>
 );
 
 export default Button;
 
 Button.propTypes = {
   text: PropTypes.string.isRequired,
+  className: PropTypes.string,
+};
+
+Button.defaultProps = {
+  className: '',
 };
